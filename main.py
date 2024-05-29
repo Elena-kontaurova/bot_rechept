@@ -40,7 +40,6 @@ def array():
             # yield number, text
 
         video = bs.find('meta', attrs={'itemprop' : "embedUrl"}).get('content')
-        
         yield name, description, (ingredient_name, ingredient_count), (number, text), video 
         
         

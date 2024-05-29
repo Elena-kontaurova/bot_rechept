@@ -37,7 +37,6 @@ def array():
         for i in rechept:
             number = int(i.find("span", {"class": "emotion-1hreea5"}).text)
             text = i.find("span", {"itemprop": "text"}).text
-            # yield number, text
 
         video = bs.find('meta', attrs={'itemprop' : "embedUrl"}).get('content')
         yield name, description, (ingredient_name, ingredient_count), (number, text), video 
